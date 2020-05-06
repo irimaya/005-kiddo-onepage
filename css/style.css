@@ -1,0 +1,312 @@
+/* Variables */
+:root {
+  --orange-color: #ff834c;
+  --yellow-color: #ffc038;
+  --green-color: #61b087;
+  --green-light-color: #c2d7d8;
+ }
+ 
+ /* Reset */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ /* Main Styling */
+ html,
+ body {
+   font-family: 'Nunito', sans-serif;
+   line-height: 1.7em;
+   color: #4d4d4d;
+   scroll-behavior: smooth;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ h1, 
+ h2, 
+ h4 {
+  padding-bottom: 20px;
+}
+
+ p {
+  margin: 10px 0;
+}
+
+ p .small {
+  font-size: .75em;
+ }
+
+ p .large {
+  font-size: 1.31em;
+ }
+
+ h1 {
+   font-size: 4.18em;
+   line-height: 1.1em;
+ }
+
+ h2 {
+   font-size: 3.12em;
+ }
+
+ h4 {
+   font-size: 1.4em;
+ }
+
+ul{
+  list-style: none;
+  float: right;
+}
+
+ul li{
+  float: left;
+}
+
+ul li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+  /* Utility Classes */
+  .container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+
+ .btn {
+  display: inline-block; 
+  font-size: 18px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border: none;
+ }
+
+ .btn-dark {
+   background: var(--yellow-color);
+   color: #fff;
+ }
+ 
+ .btn-light {
+   background: #fff;
+   color: var(--yellow-color);
+   border: solid 1px var(--yellow-color);
+ }
+ 
+ .btn-black {
+   background: #4d4d4d;
+   color: #fff;
+ }
+
+/* Subnav */
+#sub-nav {
+  background: #8761b0;
+  height: 5vh;
+}
+
+#sub-nav ul{
+  padding-right: 20px;
+}
+
+#sub-nav ul li a {
+  color: #fff;
+}
+
+/* Nav */
+#main-nav {
+  height: 8vh;
+  padding: 15px 0px;
+}
+
+#main-nav img {
+  height: 50px;
+  float: left;
+}
+
+#main-nav ul li a {
+  color: #4d4d4d;
+  text-transform: uppercase;
+} 
+
+/* Showcase */
+#showcase {
+  background-image: url("../img/bk-home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  padding-top: 180px;
+  padding-left: 40px;
+}
+
+#showcase h1 {
+  color: #fff;
+}
+
+/* Features */
+#features {
+  background-image: url("../img/wallpaper-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 27vh;
+}
+
+.box-4 {
+  float: left;
+  width: 25%;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.box-4 img{
+  height: 150px;
+}
+
+/* About */
+#about {
+  height: 550px;
+  padding-top: 50px;
+  /* padding-bottom: 70px; */
+}
+
+.box-2 {
+  float: left;
+  width: 50%;
+  padding: 30px 30px 70px 30px;
+  
+}
+
+.box-2 h2 {
+  line-height: 1.1em;
+  padding-top: 20px;
+}
+
+.box-2 p {
+  font-size: 1.31em;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+/* Classes */
+#classes {
+  background-image: url("../img/wallpaper-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 300;
+  height: 700px;
+}
+
+#classes h2 {
+  text-transform: uppercase;
+  padding: 40px 0px 50px 0px;
+}
+
+.box-3 {
+  float: left;
+  width: 33.3%;
+  padding: 20px;
+}
+
+.box-3 img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.box-3 .text-box {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  margin-top: -20px;
+}
+
+.box-3 .text-box h4 {
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.box-3 .text-box p {
+  padding-bottom: 30px;
+}
+
+.box-green {
+  background: var(--green-color);
+}
+
+.box-orange {
+  background: var(--orange-color);
+}
+
+.box-yellow {
+  background: var(--yellow-color);
+}
+
+/* Contact */
+#contact {
+  background-image: url("../img/bk-contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+  padding: 60px 40px;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact textarea {
+  height: 200px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+/* Footer */
+#footer {
+  background: #8761b0;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#footer .footer-social{
+  padding-top: 20px;
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
